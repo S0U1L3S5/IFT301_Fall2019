@@ -53,44 +53,48 @@ img {
 }
 
 dl {
-    width: auto;
+    width: 100%;
     display: inline-block;
     overflow: hidden;
     padding: 0;
     margin: 0;
     height: 100%;
-    align-content: center;
+    /* align-content: left; */
+    justify-content: top;
 }
 
-dt {
+ dt {
     /* float: left; */
     display: block;
+    max-width: 100px;
     width: auto;
     /* max-width: auto; */
     height: auto;
-    padding: 0;
-    margin: 0;
+    padding: 5px;;
+    margin-left: 5px;
     background: rgb(75,75,75);
-    color: rgb(255,255,255);
+    border-radius: 25%;
+    border-style: solid;
+    /* color: rgb(255,255,255); */
     text-align: center;
-    font-size: 2em;
+    /* font-size: 2em; */
 }
 
 dd {
-    float: right;
+    /* float: right; */
     display: block;
     width: auto;
     height: auto;
-    padding: 0;
+    padding-left: 10%;
     padding-bottom: 20px;
     margin: 0;
     /* background: rgb(150,150,150); */
     /* border: solid; */
     color: rgb(0,0,0);
-    text-align: center;
-    font-size: 1.3em;
+    text-align: left;
+    font-size: 1em;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
-}
+} 
 
 ul {
     /* font-size: 1.5em; */
@@ -348,7 +352,36 @@ div.desc {
     max-width: 500px;
 }
 
+.edLeft, .edRight{
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
 
+.edLeft {
+    border-right-style: solid;
+    border-right-color: rgb(0,0,0);
+    border-right-width: 2px;
+}
+
+.edCenter {
+    border-style: dotted;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 70%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
 /*********************************************** 
 All CSS @ go beyond this point! (Rules)
 ***********************************************/
