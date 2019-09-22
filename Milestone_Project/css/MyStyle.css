@@ -1,0 +1,393 @@
+/***********************************************
+    Core CSS Elements 
+***********************************************/
+
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+    background-color: rgb(0,0,0);
+}
+
+p {
+    font-size: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    max-width: 500px;
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 10px;
+    width: auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+
+h3 {
+    text-underline-position: under;
+    border-bottom-style: solid;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+    font-size: 1.4em;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 40%;
+    align-items: center;
+}
+
+dl {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* align-content: left; */
+    justify-content: top;
+}
+
+ dt {
+    /* float: left; */
+    display: block;
+    max-width: 100px;
+    width: auto;
+    /* max-width: auto; */
+    height: auto;
+    padding: 5px;;
+    margin-left: 5px;
+    background: rgb(75,75,75);
+    border-radius: 25%;
+    border-style: solid;
+    /* color: rgb(255,255,255); */
+    text-align: center;
+    /* font-size: 2em; */
+}
+
+dd {
+    /* float: right; */
+    display: block;
+    width: auto;
+    height: auto;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    margin: 0;
+    /* background: rgb(150,150,150); */
+    /* border: solid; */
+    color: rgb(0,0,0);
+    text-align: left;
+    font-size: 1em;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
+} 
+
+ul {
+    /* font-size: 1.5em; */
+    /* border-style: dotted;
+    border-color: black; */
+    padding: 10px;
+}
+
+li {
+    padding: 5px;
+    display: block;
+    font-size: 1em;
+    /* width: auto; */
+    max-width: 100px;
+    min-width: 81px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+a {
+    font-size: .5cm;
+    padding: 5px;
+    display: inline;
+} 
+
+footer {
+    border-top-style: solid;
+    min-height: 25px;
+}
+/***********************************************
+    CSS ID's
+***********************************************/
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+}
+
+#page-wrap {
+    width: 80%;
+    max-width: 1000px;
+    align-content: center;
+    /* background: rgb(215, 218, 200); */
+    background: rgb(215, 218, 200);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    margin: auto;
+    min-height: 500px;
+    height: auto !important;
+}
+
+#content-area {
+    width: auto;
+    /* max-width: 600px; */
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+}
+
+#contact-area input, #contact-area textarea {
+    padding: 10px;
+    width: auto;
+    font-family: Helvetica, sans-serif;
+    border: 2px solid #ccc;
+}
+
+#contact-area textarea {
+    height: 90px;
+}
+
+/* Use #blackout to dim screen */
+#blackout {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-right: 250px;
+    bottom: 0;
+    background:rgba(0, 0, 0, 0.5);
+    /* z-index: 1; */
+}
+
+/*********************************************** 
+    CSS Classes and respective elements 
+***********************************************/
+
+.button {
+    background-color: rgb(25,25,25);
+    border: none;
+    padding: 2px;
+    color: rgb(255,255,255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(150,0,0);
+    color: rgb(150,150,150);
+}
+
+.label {
+    float:left;
+    text-align: left;
+    margin-left: 0%;
+    width: auto;
+    padding: 5%;
+    font-size: 1.2em;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: rgb(255,255,255);
+}
+
+.flex-list {
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.flex-list ul {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+}
+
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: left;
+    border-left: 2px solid black;
+    /* background-color: #fff; */
+}
+
+.dim {
+    width: 100%;
+    height: 100%;
+    z-index: -6;
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+div.box {
+    text-align: center;
+    padding: 5px;
+    height: auto;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 150px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.navMenuBox{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+}
+
+.left , .right , .center{
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.jobWrapper {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: center;
+}
+
+.jobImage {
+    margin: 5px;
+    max-width: 25%;
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobImage img {
+    max-width: 125px;
+    height: 100%;
+    width: 100%;
+    max-height: 125px;
+    align-items: center;
+}
+
+.jobDescription {
+    margin: 2px;
+    max-width: 500px;
+    /* min-width: 50%; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-content: center;
+    border-style: double;
+    min-height: 200px;
+    max-height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* height: 200px; */
+    /* text-align: left; */
+}
+
+.jobDescription h3, h4, h5 {
+    text-align: left;
+    padding-left: 15px;
+    margin: 0%;
+    max-width: 500px;
+}
+
+.edLeft, .edRight{
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
+
+.edLeft {
+    border-right-style: solid;
+    border-right-color: rgb(0,0,0);
+    border-right-width: 2px;
+}
+
+.edCenter {
+    border-style: dotted;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 70%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
+/*********************************************** 
+All CSS @ go beyond this point! (Rules)
+***********************************************/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>WK3 HW - Part 2</title>
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="author" content="Austin Gutierrez">
+        <meta name="description" content="Introduction to Tables">
+        <meta name="keywords" content="keywords,here">
+        <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=yes"/>
+        <link href="./FormStyle.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <!-- Forms Example -->
+        <h1>Payment Form</h1>
+        <h3>All fields are REQUIRED</h3>
+        <div>
+            <form action="" method="POST" name="PaymentForm">
+                <label>First Name</label>
+                <input type="text" name="fname" value=""> <br />
+
+                <label>Last Name</label>
+                <input type="text" name="lname" value=""> <br />
+
+                <label>Street Address</label>
+                <input type="text" name="address" value=""> <br />
+
+                <label>City</label>
+                <input type="text" name="city" value=""> <br />
+
+                <label>State</label>
+                <input type="text" name="state" value=""> <br />
+
+                <label>ZIP/Postal Code</label>
+                <input type="text" name="zip" value=""> <br />
+
+                <label>Credit Card Type</label> <br />
+                    <input type="radio" name="cardtype" value="MasterCard">
+                    <label for="cardtype">MasterCard</label> <br />
+                    <input type="radio" name="cardtype" value="VISA"> 
+                    <label for="cardtype">Visa</label> <br />
+                    <input type="radio" name="cardtype" value="Discover">
+                    <label for="cardtype">Discover</label> <br />
+
+                <label>Credit Card Number</label>
+                <input type="text" name="cardnum" value=""> <br />
+
+                <label>Expiration Date</label>
+                    <select name="expMonth">
+                        <option value="" selected>--Month--</option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="expYear">
+                        <option value="" selected>--Year--</option>
+                        <option value="2019" >2019</option>
+                        <option value="2020" >2020</option>
+                        <option value="2021" >2021</option>
+                        <option value="2022" >2022</option>
+                        <option value="2023" >2023</option>
+                        <option value="2024" >2024</option>
+                        <option value="2025" >2025</option>
+                        <option value="2026" >2026</option>
+                        <option value="2027" >2027</option>
+                        <option value="2028" >2028</option>
+                    </select> <br />
+
+                <label>Special Notes</label> <br />
+                <textarea name="comment" cols="30" rows="8" placeholder="Enter Comments Here..."></textarea> 
+                <br /> <br />
+
+                <input type="submit" name="submit" value="Submit Payment">
+            </form>
+        </div>
+    </body>
+</html>
