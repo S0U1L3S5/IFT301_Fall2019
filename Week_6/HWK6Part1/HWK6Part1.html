@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>HWK 6 Part 1</title>
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="author" content="Austin Gutierrez">
+        <meta name="description" content="description here">
+        <meta name="keywords" content="keywords,here">
+        <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=yes"/>
+        <link href="./HWK6Part1.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="contentArea">
+            <div class="options">
+                <button id="ShowInfo"  onclick="DisplayPokemon()">Show Pokemon Information</button>
+            </div>
+
+            <div class="card" id="PokemonCard">
+                <div class="header">
+                    <h3 class="left" id="Name">Pokemon Name</h3>
+                    <h3 class="right" id="Type">Pokemon Type</h3>
+                 </div>
+                 <hr>
+
+                 <div class="imgBox">
+                    <img id="Pokemon"> 
+                    <p id="Description"></p>
+                 </div>
+                 <hr>
+
+                 <div class="wrapper">
+                     <div class="left">
+                        <table>
+                            <thead>
+                                <th>Stats</th>
+                            </thead>
+                            <tbody id="stats">
+                            </tbody>
+                        </table>
+                     </div>
+                     <div class="right">
+                         <div class="wrapper">
+                            <div class="left">
+                                <ul id="chars">
+        
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul id="charsInfo">
+
+                                </ul>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+                 
+                 <!-- <div>
+                    <a id="Link">PokeDex Website</a>
+                 </div> -->
+            </div>
+
+            <div>
+                <a id="Link">PokeDex Website</a>
+            </div>
+        </div>
+
+        <footer>
+            <script src="./HWK6Part1.js"></script>
+        </footer>
+    </body>
+</html>
+
