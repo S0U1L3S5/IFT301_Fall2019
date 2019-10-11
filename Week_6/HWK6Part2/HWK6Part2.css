@@ -1,0 +1,73 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 25px;
+    padding: 25px;
+    border-collapse: collapse;
+    background-color: rgb(16, 71, 97);
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    width: 1000px;
+}
+.contentArea {
+    width: 750px;
+    height: auto;
+    margin: auto;
+    padding: 0px;
+}
+
+.formArea {
+    width: 600px;
+    height: auto;
+    margin: auto;
+    padding: 0px;
+    display: block;
+}
+
+
+label {
+    /* float: left; */
+    /* text-align: right; */
+    color: rgb(255,255,255);
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+    font-size: 1.4em;
+}
+
+table {
+	width: 600px;
+	margin: 10px auto;
+	border-collapse: collapse;
+	border: 1px solid black;
+}
+
+form {
+	width: 500px;
+    padding: 20px;
+    margin: auto;
+	border: 5px solid black;
+}	
+
+td {
+	border: 1px solid black;
+	padding: 2px;
+    border-collapse: collapse;
+    background-color: rgb(255,255,255);
+    height: 10px;
+}
+
+th {
+	border: 1px solid black;
+	padding: 2px;
+	text-align: center;
+	font-style: bold;
+	background-color: rgb(15, 15, 15);
+	color: white;
+}
+
+tr:hover {
+	background-color: rgb(130,130,130);
+}

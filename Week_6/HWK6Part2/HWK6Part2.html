@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>HWK 6 Part 2</title>
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="author" content="Austin Gutierrez">
+        <meta name="description" content="description here">
+        <meta name="keywords" content="keywords,here">
+        <meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=yes"/>
+        <link href="./HWK6Part2.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div class="contentArea">
+            <div class="formArea">
+                <form action="" method="POST" name="DataForm">
+
+                    <label>First Name</label>
+                    <input id="firstname" type="text" name="fname" placeholder="Austin"> <br />
+
+                    <label>Last Name</label>
+                    <input id="lastname" type="text" name="lname" placeholder="Gutierrez"> <br />
+
+                    <label>Age</label>
+                    <input id="myage" type="text" name="age" placeholder="27"> <br />
+
+                </form>
+
+                <button id="addButton" onclick="addToTable()">Add Data</button>
+            </div>
+
+            <div>
+                <table>
+                    <thead>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                    </thead>
+                    <tbody id="formData">
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <script src="./HWK6Part2.js"></script>
+        </footer>
+    </body>
+</html>
+

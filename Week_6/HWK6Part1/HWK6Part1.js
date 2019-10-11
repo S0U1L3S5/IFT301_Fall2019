@@ -1,3 +1,4 @@
+// Declare Variables
 var name = "#093 - Haunter";
 var type = "Ghost";
 var description = "Haunter is a dangerous Pokémon. If one beckons you while floating in darkness, you must never approach it. This Pokémon will try to lick you with its tongue and steal your life away.";
@@ -14,7 +15,7 @@ var link = document.getElementById("Link");
 
 // Function to fill in card information
 function DisplayPokemon() {
-    // Displa Basic Pokemon Information
+    // Display Basic Pokemon Information
     var pokemonName = document.getElementById("Name");
     pokemonName.innerText = name;
     var pokemonType = document.getElementById("Type");

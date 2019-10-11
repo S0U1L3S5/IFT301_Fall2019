@@ -1,0 +1,255 @@
+/* html tags */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    background: rgb(0,0,0);
+    margin: 25px;
+}
+
+body {
+    min-width: 500px;
+    margin: 0;
+    padding: 0;
+    
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 40%;
+    align-items: flex-end;
+}
+
+h3 {
+    text-underline-position: below;
+    border-bottom-style: solid;
+}
+
+ul {
+    padding: 10px;
+}
+
+li {
+    padding: 5px;
+    display: block;
+    font-size: 1em;
+    max-width: 100px;
+    min-width: 81px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+dl {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: top;
+}
+
+ dt {
+    display: block;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    padding: 5px;;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background: rgb(75,75,75);
+    border-radius: 25%;
+    border-style: solid;
+    text-align: center;
+    color: white;
+    border-color: rgb(0,0,0);
+}
+
+dd {
+    display: block;
+    width: auto;
+    height: auto;
+    padding-left: 10%;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    color: rgb(0,0,0);
+    text-align: left;
+    font-size: 1em;
+
+} 
+
+/* Classes */
+.wrapper {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+
+div.main {
+    max-width: 850px;
+    margin: auto;
+    align-content: center;
+    background: rgb(215,215,200);
+    border-radius: 25px;
+    border-style: solid;
+    border-width: 5px;
+    min-height: 500px;
+    height: auto !important;
+}
+
+div.headerBox {
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    font-size: 20px;
+}
+
+div.navMenuBox {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    text-align: center;
+    margin: 5px;
+    height: auto;
+    font-size: 18px;
+}
+
+div.contentBox {
+    margin: 25px;
+}
+
+div.footerBox {
+    border-top-style: solid;
+    min-height: 25px;
+    display: flex;
+    /* flex-direction: column; */
+    margin: 5px;
+    text-align: center;
+}
+
+.left , .right , .center{
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.jobWrapper {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.jobImage {
+    margin: 0px;
+    max-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobImage img {
+    max-width: 125px;
+    max-height: 125px;
+    align-items: center;
+}
+
+.jobDescription {
+    margin: 2px;
+    max-width: 500px;
+    flex: 1;
+    justify-content: top;
+    align-content: center;
+    border-style: double;
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.jobDescription h3, h4, h5 {
+    text-align: left;
+    padding-left: 15px;
+    margin: 0%;
+    max-width: 500px;
+}
+
+.jobDescription p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.projectDescription {
+    margin: 2px;
+    max-width: 500px;
+    flex: 1;
+    justify-content: top;
+    align-content: center;
+    border-style: double;
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(48, 34, 34);
+    color: rgb(240,240,240);
+}
+
+.projectDescription h3, h4, h5 {
+    text-align: left;
+    padding-left: 15px;
+    margin: 0%;
+    max-width: 500px;
+}
+.projectDescription p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.edLeft, .edRight{
+    margin: 5px;
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
+
+.edLeft {
+    border-right-style: solid;
+    border-right-color: rgb(0,0,0);
+    border-right-width: 2px;
+}
+
+.edCenter {
+    border-style: dotted;
+    margin-top: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 70%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: top ;
+    align-content: center;
+    align-items: center;
+}
